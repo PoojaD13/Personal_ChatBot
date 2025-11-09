@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JARVIS AI Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>🤖 JARVIS AI Assistant</h1>
+            <div class="status" id="status">🔴 Connecting...</div>
+        </header>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <div class="upload-section">
+                    <h3>📁 Upload Documents</h3>
+                    <input type="file" id="fileInput" multiple accept=".pdf,.docx,.txt,.png,.jpg,.jpeg,.xlsx,.pptx">
+                    <button onclick="uploadFile()">🚀 Upload & Process</button>
+                    <div id="uploadStatus"></div>
+                </div>
+
+                <!-- <div class="quick-actions">
+    <h3>🔍 Quick Actions</h3>
+    <button onclick="askQuestion('What documents do you have?')">📋 List Documents</button>
+    <button onclick="askQuestion('Summarize the main topics')">📊 Summarize Topics</button>
+    <button onclick="askQuestion('What are the key findings?')">🔑 Key Findings</button>
+    <button onclick="askQuestion('Show me statistics mentioned')">📈 Find Statistics</button>
+    
+   
+    <button onclick="askQuestion('What can you do?')">🤔 What can you do?</button>
+    <button onclick="askQuestion('Help')">❓ Help</button>
+    <button onclick="askQuestion('Tell me a joke')">😄 Tell a joke</button>
+</div> -->
+
+                <div class="system-info">
+                    <h3>ℹ️ System Info</h3>
+                    <div id="systemInfo">Loading...</div>
+                </div>
+            </div>
+
+            <!-- Chat Area -->
+            <div class="chat-area">
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message assistant">
+                        <strong>JARVIS:</strong> Hello! I'm JARVIS. Upload documents or ask me questions about your
+                        content.
+                    </div>
+                </div>
+
+                <!-- <div class="chat-input">
+                    <textarea id="userInput" placeholder="Ask JARVIS about your documents..."></textarea>
+                    <button onclick="sendMessage()">🚀 Send</button>
+                    <button onclick="clearChat()">🗑️ Clear</button>
+                </div> -->
+                <!-- In the chat-input div, add these buttons -->
+                <div class="chat-input">
+                    <textarea id="userInput" placeholder="Ask JARVIS about your documents..."></textarea>
+                    <div class="voice-controls">
+                        <button id="voiceInputBtn" onclick="startVoiceInput()">🎤</button>
+                        <button id="stopVoiceBtn" onclick="stopVoiceInput()" style="display: none;">⏹️ Stop</button>
+                        <button id="speakBtn" onclick="speakLastResponse()">🔊</button>
+                        <button onclick="sendMessage()">🚀 </button>
+                        <button onclick="clearChat()">🗑️ </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

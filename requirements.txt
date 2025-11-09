@@ -1,0 +1,27 @@
+fastapi==0.104.1
+uvicorn==0.24.0
+pinecone==3.0.0
+sentence-transformers==2.2.2
+python-multipart==0.0.6
+PyPDF2==3.0.1
+python-docx==1.1.0
+openpyxl==3.1.2
+pandas==2.1.3
+python-pptx==0.6.23
+pillow==10.1.0
+pytesseract==0.3.10
+opencv-python==4.8.1.78
+requests==2.31.0
+python-dotenv==1.0.0
+
+
+jarvis-agent/
+├── 📁 venv/                         # Virtual environment (auto-created)
+├── 📄 .env                          # Environment variables
+├── 📄 requirements.txt              # Dependencies
+├── 📄 main.py                       # FastAPI server
+├── 📄 vector_db.py                  # Pinecone vector database
+├── 📄 llm_manager.py                # Ollama LLM interface
+├── 📄 file_processor.py             # File processing (PDF, Excel, Word, etc.)
+└── 📄 .gitignore                    # Git ignore rules
+
