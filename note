@@ -1,0 +1,6 @@
+# env file  - Template file
+PINECONE_API_KEY=your_pinecone_api_key_here
+PINECONE_ENVIRONMENT=your_environment_here
+OLLAMA_BASE_URL=http://localhost:11434 #link
+OLLAMA_MODEL=model name your using 
+EMBEDDING_MODEL=all-MiniLM-L6-v2
