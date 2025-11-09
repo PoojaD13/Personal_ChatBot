@@ -10,7 +10,7 @@
 -Vector Database: Efficient document storage and retrieval using Pinecone<br>
 
 # -Quick Start
--Prerequisites<br>
+# Prerequisites<br>
 -Python 3.8+<br>
 Ollama (for local LLM models)<br>
 Pinecone account (for vector database)<br>
