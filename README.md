@@ -1,7 +1,7 @@
-# - JARVIS AI Agent 
-# --An intelligent document analysis system with multi-format file support, powered by AI and semantic search.
+# JARVIS AI Agent 
+-An intelligent document analysis system with multi-format file support, powered by AI and semantic search.
 
-# -Features
+# Features
 -Multi-Format Document Support: PDF, Word, Excel, PowerPoint, Text, Images<br>
 -OCR Capabilities: Extract text from images and scanned documents<br>
 -Semantic Search: AI-powered document understanding and retrieval<br>
